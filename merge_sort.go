@@ -16,10 +16,10 @@ func MergeSort(arr []string) []string {
 	if len(left) > 1 {
 		left = MergeSort(left)
 	}
-	return compareSides(left, right)
+	return merge(left, right)
 }
 
-func compareSides(arr1 []string, arr2 []string) []string {
+func merge(arr1 []string, arr2 []string) []string {
 	newArr := make([]string, 0)
 	i := 0
 	j := 0
